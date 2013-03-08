@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <widget xmlns="http://www.w3.org/ns/widgets"
+         xmlns:NOKIA="http://www.ovi.com/widgetservice"
+				 id="http://s40wa.learnews.com"
+				 version="1.03"
+				 viewmodes="windowed fullscreen">
+    
+    <name short="Learnews">Learnews</name>    
+
+    <description>
+      Learn English by reading news.
+    </description>
+    
+    <!-- Note: Author href MUST BE Url encoded 
+        @see http://en.wikipedia.org/wiki/Percent-encoding -->   
+    <author email="mail@snov.me" href="http://snov.me">
+      Sergey Novikov
+    </author>
+    
+    <icon src="icon.png"/>
+
+    <content src="index.html"/>
+    
+    <license>
+		  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+		  INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+		  PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+		  HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION 
+		  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+		  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.    	
+    </license>
+   
+   	<feature name="nokia://s40.nokia.com/SAWRT/1.0 " required="true" />
+		
+    <preference name="lang" value="auto" />
+		
+</widget>

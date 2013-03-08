@@ -1,0 +1,45 @@
+.dict {
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.dict ol, .dict ul {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: -24px;
+}
+.dict ol.etymology {
+  margin-left: -14px;
+}
+.dict dl {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 8px;
+  padding: 0;
+}
+.dict dd {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding: 0;
+}
+.dict p {
+  margin: 0;
+  padding: 0;
+}
+.dict .part {
+  color: darkgreen;
+  font-weight: bold;
+}
+.dict a {
+  color: #000000;
+	text-decoration: none;
+}
+.dict a.link {
+  color: #687c90;
+  text-decoration: underline;
+  /*border-bottom: 1px dashed #687c90;*/
+}

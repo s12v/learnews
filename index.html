@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Learn english by reading news</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script language="javascript" type="text/javascript" src="js/single.js"></script>
+		<link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/single.css" type="text/css" />
+    <link rel="stylesheet" href="css/lists.css" type="text/css" />
+    <link rel="stylesheet" href="css/dict.css" type="text/css" />
+    <meta name="Generator" content="Nokia WDE 3.2.0" />
+  </head>
+	
+  <body onload="javascript:init();">
+    <table id="header" cellpadding="0" cellspacing="0" summary="Learn English">
+      <tr>
+        <td class="header-logo">
+        	<!-- removing "slider-x" class cause transition is bugged and jumping to help for a while :O -->
+          <img src="img/logo.png" width="102" height="20" alt="Learnews" onclick="mwl.removeClass('#slider', 'slider-x'); mwl.removeClass('#slider', 'pos-*'); mwl.removeClass('#buttons-slider', 'buttons-pos-*'); mwl.addClass('#slider', 'pos-start'); mwl.addClass('#buttons-slider', 'buttons-pos-start'); mwl.scrollTo('#screen-start'); mwl.addClass('#slider', 'slider-x');" />
+        </td>
+        <td id="top" class="header-button">
+        	<div id="buttons-stage">
+	          <div id="buttons-slider" class="buttons-poss-start">
+			        <img src="img/button_help.png" width="40" height="40" alt="" onclick="mwl.switchClass('#slider', 'pos-start', 'pos-help'); mwl.switchClass('#buttons-slider', 'buttons-pos-start', 'buttons-pos-help'); mwl.scrollTo('#screen-help');" />
+	            <img src="img/button_back.png" width="40" height="40" alt="" onclick="mwl.switchClass('#slider', 'pos-news', 'pos-start'); mwl.switchClass('#buttons-slider', 'buttons-pos-news', 'buttons-pos-start'); mwl.scrollTo('#screen-start');" />
+	            <img src="img/button_back.png" width="40" height="40" alt="" onclick="mwl.switchClass('#slider', 'pos-reader', 'pos-news'); mwl.switchClass('#buttons-slider', 'buttons-pos-reader', 'buttons-pos-news'); mwl.scrollTo('#screen-news');" />
+              <img src="img/button_back.png" width="40" height="40" alt="" onclick="mwl.switchClass('#slider', 'pos-dict', 'pos-reader'); mwl.switchClass('#buttons-slider', 'buttons-pos-dict', 'buttons-pos-reader'); mwl.scrollTo('#screen-reader');" />
+              <img src="img/button_back.png" width="40" height="40" alt="" onclick="mwl.switchClass('#slider', 'pos-help', 'pos-start'); mwl.switchClass('#buttons-slider', 'buttons-pos-help', 'buttons-pos-start'); mwl.scrollTo('#screen-start');" />
+					  </div>
+          </div>
+  			</td>
+      </tr>
+    </table>
+		
+    <div id="stage">
+      <table id="slider" class="pos-start slider-x" cellspacing="0" cellpadding="0" border="0" summary="Slider Table">
+        <tr>
+          <td align="left" valign="top" class="shadow1">
+            <div id="screen-help">
+		        <div class="text indent-hack">
+		        	&nbsp;
+	                <h1>About</h1>
+					<div class="indent-hack">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Learn English by reading news. Tap an unknown word to see its translation.
+						Tap again to look up that word in the dictionary.
+				  	</div>
+	                <form id="form0" action="">
+		               	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		                Choose the language you want to translate to:<br/>
+						<select id="select-lang" name="select-lang" style="margin-left: 32px; margin-top: 16px;" onchange="onLanguageSelect();">
+               <option value="auto">Auto-detect</option>
+               <option value="ar">Arabic</option>
+               <option value="bg">Bulgarian</option>
+               <option value="ca">Catalan</option>
+               <option value="zh-CHS">Chinese Simplified</option>
+               <option value="zh-CHT">Chinese Traditional</option>
+               <option value="cs">Czech</option>
+               <option value="da">Danish</option>
+               <option value="nl">Dutch</option>
+               <option value="et">Estonian</option>
+               <option value="fi">Finnish</option>
+               <option value="fr">French</option>
+               <option value="de">German</option>
+               <option value="el">Greek</option>
+               <option value="ht">Haitian Creole</option>
+               <option value="he">Hebrew</option>
+               <option value="hi">Hindi</option>
+               <option value="hu">Hungarian</option>
+               <option value="id">Indonesian</option>
+               <option value="it">Italian</option>
+               <option value="ja">Japanese</option>
+               <option value="ko">Korean</option>
+               <option value="lv">Latvian</option>
+               <option value="lt">Lithuanian</option>
+               <option value="no">Norwegian</option>
+               <option value="pl">Polish</option>
+               <option value="pt">Portuguese</option>
+               <option value="ro">Romanian</option>
+               <option value="ru">Russian</option>
+               <option value="sk">Slovak</option>
+               <option value="sl">Slovenian</option>
+               <option value="es">Spanish</option>
+               <option value="sv">Swedish</option>
+               <option value="th">Thai</option>
+               <option value="tr">Turkish</option>
+               <option value="uk">Ukrainian</option>
+               <option value="vi">Vietnamese</option>                    
+						</select>
+						<br/>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						By default, the translation is done to the language selected in the phone.
+	                </form>
+					<br/>
+	              	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	                The translation is done with <a href="http://www.microsofttranslator.com/">Microsoft Translator</a>.
+				</div>
+            </div>
+          </td>
+          <td align="left" valign="top" class="shadow1">
+          	<div id="language-selector"></div>
+          	<div id="screen-start" class="loading"></div>
+		  </td>
+          <td align="left" valign="top" class="shadow1">
+            <div id="screen-news" class="loading"></div>
+          </td>
+          <td align="left" valign="top" class="shadow1">
+            <div id="screen-reader" class="loading"></div>
+          </td>
+          <td align="left" valign="top" class="shadow1">
+            <div id="screen-dict" class="loading"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </body>
+</html>
